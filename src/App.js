@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { Box } from "@mui/material"
+import { Navbar, Feed, SearchFeed, VideoDetail, ChannelDetail } from "./components"
 
 
 const App = () => (
@@ -8,7 +9,7 @@ const App = () => (
 
     <Box sx={{backgroundColor: '#000'}}>
 
-      <Navbar />
+      <Navbar/>
 
       <Routes>
 
