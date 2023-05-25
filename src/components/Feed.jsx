@@ -1,13 +1,14 @@
-import {useState,useEffect} from 'react'
 import { Box, Stack, Typography } from '@mui/material'
 import {Sidebar, Videos} from './'
 import { fetchFromAPI } from '../utils/fetchFromAPI'
+import React, {useState,useEffect} from 'react'
+
 
 
 const Feed = () => {
 
 const [selectedCategory, setSelectedCategory] = useState('New')
-const [videos, setVideos] = useState([])
+const [videos, setVideos] = useState([]);
 
 
 useEffect(()=> {
@@ -45,10 +46,8 @@ useEffect(()=> {
         sx={{color: 'white'}}
         >
 
-          {selectedCategory} <span
-          style={{color :'#F31503'}} >
-            Videos
-          </span>
+{selectedCategory} <span style={{color :'#FC1503'}} >Videos</span>
+
 
         </Typography>
 
